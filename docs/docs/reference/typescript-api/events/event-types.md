@@ -1300,6 +1300,28 @@ class ProvinceEvent extends VendureEntityEvent<Province, ProvinceInputTypes> {
 </div>
 
 
+## RefundEvent
+
+<GenerationInfo sourceFile="packages/core/src/event-bus/events/refund-event.ts" sourceLine="13" packageName="@vendure/core" />
+
+This event is fired whenever a {@link Refund} is created.
+
+```ts title="Signature"
+class RefundEvent extends VendureEvent {
+    constructor(ctx: RequestContext, order: Order, refund: Refund)
+}
+```
+* Extends: <code><a href='/reference/typescript-api/events/vendure-event#vendureevent'>VendureEvent</a></code>
+
+<div className="members-wrapper">
+
+### constructor
+
+<MemberInfo kind="method" type={`(ctx: <a href='/reference/typescript-api/request/request-context#requestcontext'>RequestContext</a>, order: <a href='/reference/typescript-api/entities/order#order'>Order</a>, refund: Refund) => RefundEvent`}   />
+
+</div>
+
+
 ## RefundStateTransitionEvent
 
 <GenerationInfo sourceFile="packages/core/src/event-bus/events/refund-state-transition-event.ts" sourceLine="14" packageName="@vendure/core" />
